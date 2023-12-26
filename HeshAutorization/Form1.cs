@@ -125,7 +125,7 @@ namespace HeshAutorization
                         SqlCommand sqlCommand = new SqlCommand(commandString, sqlConnection);
                         SqlCommand sqlCommand2 = new SqlCommand(commandString2, sqlConnection);
 
-                        if (sqlCommand.ExecuteNonQuery() == 1 || sqlCommand2.ExecuteNonQuery() == 1)
+                        if (sqlCommand.ExecuteNonQuery() == 1 | sqlCommand2.ExecuteNonQuery() == 1)
                         {
                             MessageBox.Show("Акаунт был создан", "Успех");
 
